@@ -87,7 +87,7 @@ class App extends Component {
 }
 ```
 
-![Here's how that looks](/screenshots/demo3.png?raw=true "Props")
+![Here's how that looks](./screenshots/demo3.png?raw=true "Props")
 
 
 
