@@ -88,7 +88,7 @@ class App extends Component {
 ```
 
 
-![Props](/blob/master/screenshots/demo3.PNG)
+![Props](/screenshots/demo3.PNG)
 
 ## Useful links
 
