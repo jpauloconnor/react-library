@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.error{ color: red; }
+
+.search-bar {
+  margin: 20px;
+  text-align: left;
+}
+
+.vidSearchLbl {
+  padding-right: 10px;
+  font-family: sans-serif;
+  color: orange;
+  font-size: 20px;
+}
+
+.search-bar input {
+  width: 25%;
+}
+
+iframe {
+  width: 1000px;
+  height: 500px;
+}
+
+.video-detail .details {
+  margin-top: 10px;
+  padding: 10px;
+  border: 2px solid orange;
+  border-radius: 4px;
+  margin: 0px 300px 5px 300px;
+}
+
+footer {
+    background-color: #222;
+    height: 50px;
+    padding: 20px;
+    color: white;
+}
