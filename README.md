@@ -23,13 +23,13 @@ This is a collection of demos of React.js. These demos are purposely written in 
 
 ## Index
 
-1. [Render JSX](#react01-render-jsx)
+1. [Class Components](#class-components)
 
 ---
 
 ## Demo01: Class Components
 
-[demo]() / [source]()
+[demo](class-components) / [source](https://github.com/jpauloconnor/react-library/blob/master/src/components/Demo_01.js)
 
 1. Class Components
 ```js
@@ -44,6 +44,51 @@ export default class HelloWorld extends Component {
   }
 }
 ```
+
+
+
+## Demo03: Functional Components with Props
+
+[demo](class-components) / [source](https://github.com/jpauloconnor/react-library/blob/master/src/components/Demo_01.js)
+
+1. Class Components
+```js
+import React from 'react';
+
+const ReusableButton = function(props){
+  return(
+    <button>{props.label}</button>
+  );
+};
+
+export default ReusableButton;
+```
+And here we have our App, where we can create many instances of the component, while passing any different props. Don't forget to import the component!
+
+```js
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <div className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h2>Welcome to React</h2>
+        </div>
+
+        <ReusableButton label="Press here" />
+        <ReusableButton label="And press here" />
+        <ReusableButton label="Another Button" />
+        <ReusableButton label="You get the point" />
+        <ReusableButton label="Hello" />
+        <ReusableButton label="Another Button" />
+      </div>
+    );
+  }
+}
+```
+
+![Here's how that looks](/screenshots/demo3.png?raw=true "Props")
+
 
 
 
