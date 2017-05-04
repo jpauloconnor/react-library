@@ -87,10 +87,8 @@ class App extends Component {
 }
 ```
 
-![Here's how that looks](./screenshots/demo3.png?raw=true "Props")
 
-
-
+![Props](jpauloconnor.github.com/react-library/screenshots/demo3.png)
 
 ## Useful links
 
