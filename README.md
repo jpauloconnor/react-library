@@ -51,7 +51,8 @@ export default class HelloWorld extends Component {
 
 [demo](class-components) / [source](https://github.com/jpauloconnor/react-library/blob/master/src/components/Demo_01.js)
 
-1. Class Components
+Functional Components
+
 ```js
 import React from 'react';
 
@@ -86,9 +87,64 @@ class App extends Component {
   }
 }
 ```
-
-
 ![Props](/screenshots/demo3.PNG)
+
+## Demo04: State Intro
+
+State:
+
+
+```js
+import React from 'react';
+import {Component} from 'react';
+
+
+export default class IncrementButtonPartOne extends Component {
+  constructor(props){
+    super(props);
+    this.state = {counter: 0};
+  }
+  render(){
+    return(
+      <button>{this.state.counter}</button>
+    );
+  }
+}
+
+```
+![StateIntro](/screenshots/demo4.PNG)
+
+## Demo05: setState()
+
+The setState() method allows us to change the state of something in our application.
+
+```js
+import React from 'react';
+import {Component} from 'react';
+
+export default class IncrementButtonPartTwo extends Component {
+  constructor(props){
+    super(props);
+    this.state = {counter: 0}
+  };
+
+  incrementByOne = () => {
+    this.setState({
+      counter: this.state.counter + 1
+    })
+  };
+
+  render(){
+    return(
+    
+      <button onClick={this.incrementByOne}>
+        {this.state.counter}
+      </button>     
+    );
+  }
+}
+```
+![setState](/screenshots/demo5.PNG)
 
 ## Useful links
 
