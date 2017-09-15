@@ -15,41 +15,8 @@ import {
   Link
 } from 'react-router-dom'
 
-const routes = [
-  { path: '/',
-    exact: true,
-    sidebar: () => <div>Home</div>,
-    main: () => <h2>Home</h2>
-  },
-  { path: '/functionalcomponent',
-    sidebar: () => <div>Functional Component</div>,
-    main: () => <FunctionalComponent />
-  },
-  { path: '/classcomponent',
-    sidebar: () => <div>Class Component</div>,
-    main: () => <JSXRules />
-  },
-  { path: '/jsx',
-    sidebar: () => <div>JSX</div>,
-    main: () => <JSXRules />
-  },
-  { path: '/props',
-    sidebar: () => <div>Props</div>,
-    main: () => <Props label="Button" />
-  },
-    { path: '/state',
-    sidebar: () => <div>State</div>,
-    main: () => <State />
-  },
-    { path: '/setState',
-    sidebar: () => <div>setState</div>,
-    main: () => <SetState />
-  },
-  { path: '/video',
-    sidebar: () => <div>Video</div>,
-    main: () => <Video />
-  },
-]
+import { routes } from './constants/routes';
+
 
 const App = () => (
   <div>
