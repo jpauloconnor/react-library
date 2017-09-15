@@ -1,7 +1,9 @@
 import React from 'react';
-import FunctionalComponent from '../components/01_hello_react';
+import FunctionalComponent from '../components/01_functional_component';
+import FatArrow from '../components/02_fat_arrow';
 import Header from '../components/02_header';
-import JSXRules from '../components/03_jsx';
+import ClassComponent from '../components/03_class_component';
+import JSXRules from '../components/04_jsx';
 import Props from '../components/04_props';
 import State from '../components/05_state';
 import SetState from '../components/06_setState';
@@ -18,9 +20,13 @@ export const routes = [
     sidebar: () => <div>Functional Component</div>,
     main: () => <FunctionalComponent />
   },
+  { path: '/fatarrow',
+    sidebar: () => <div>Fat Arrow</div>,
+    main: () => <FatArrow />
+  },
   { path: '/classcomponent',
     sidebar: () => <div>Class Component</div>,
-    main: () => <JSXRules />
+    main: () => <ClassComponent />
   },
   { path: '/jsx',
     sidebar: () => <div>JSX</div>,
