@@ -12,7 +12,7 @@ export default class SetState extends Component {
 			counter: this.state.counter + 1
 		})
 	};
-
+	
 	render(){
 		return(
 		

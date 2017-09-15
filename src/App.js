@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
-import HelloReact from './components/01_hello_react';
+import FunctionalComponent from './components/01_hello_react';
 import Header from './components/02_header';
 import JSXRules from './components/03_jsx';
 import Props from './components/04_props';
@@ -21,13 +21,21 @@ const routes = [
     sidebar: () => <div>Home</div>,
     main: () => <h2>Home</h2>
   },
+  { path: '/functionalcomponent',
+    sidebar: () => <div>Functional Component</div>,
+    main: () => <FunctionalComponent />
+  },
+  { path: '/classcomponent',
+    sidebar: () => <div>Class Component</div>,
+    main: () => <JSXRules />
+  },
   { path: '/jsx',
     sidebar: () => <div>JSX</div>,
     main: () => <JSXRules />
   },
   { path: '/props',
     sidebar: () => <div>Props</div>,
-    main: () => <Props />
+    main: () => <Props label="Button" />
   },
     { path: '/state',
     sidebar: () => <div>State</div>,
@@ -45,37 +53,39 @@ const routes = [
 
 const App = () => (
   <div>
-  <Header />
-  <Router>
-    <div style={{ display: 'flex' }}>
-      <div style={{
-        padding: '10px',
-        width: '20%',
-        background: '#f0f0f0'
-      }}>
-        <ul style={{ listStyleType: 'none', padding: 0 }}>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/jsx">JSX</Link></li>
-          <li><Link to="/props">Props</Link></li>
-          <li><Link to="/state">State</Link></li>
-          <li><Link to="/setstate">setState</Link></li>
-          <li><Link to="/video">Video</Link></li>
+    <Header />
+    <Router>
+      <div style={{ display: 'flex' }}>
+        <div style={{
+          padding: '10px',
+          width: '20%',
+          background: '#f0f0f0'
+        }}>
+          <ul style={{ listStyleType: 'none', padding: 0 }}>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/functionalcomponent">Functional Component</Link></li>
+            <li><Link to="/classcomponent">Class Component</Link></li>
+            <li><Link to="/jsx">JSX</Link></li>
+            <li><Link to="/props">Props</Link></li>
+            <li><Link to="/state">State</Link></li>
+            <li><Link to="/setstate">setState</Link></li>
+            <li><Link to="/video">Video</Link></li>
 
-        </ul>
-      </div>
+          </ul>
+        </div>
 
-      <div style={{ flex: 1, padding: '10px' }}>
-        {routes.map((route, index) => (
-          <Route
-            key={index}
-            path={route.path}
-            exact={route.exact}
-            component={route.main}
-          />
-        ))}
+        <div style={{ flex: 1, padding: '10px' }}>
+          {routes.map((route, index) => (
+            <Route
+              key={index}
+              path={route.path}
+              exact={route.exact}
+              component={route.main}
+            />
+          ))}
+        </div>
       </div>
-    </div>
-  </Router>
+    </Router>
   </div>
 )
 
