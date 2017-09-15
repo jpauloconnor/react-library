@@ -1,7 +1,6 @@
 ﻿import React from 'react';
 import { Component } from 'react';
 
-
 export default class Title extends Component {
     render() {
         return (
@@ -11,5 +10,4 @@ export default class Title extends Component {
             </div>
         );
     }
-
 }

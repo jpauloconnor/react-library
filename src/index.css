@@ -6,6 +6,25 @@ body {
 
 .error{ color: red; }
 
+
+
+.navbar {
+	color: white;
+}
+
+.navbar h1 {
+	padding-left: 10px;
+	margin-left: 10px;
+	float: left;
+}
+
+.navbar .logo {
+	float: left;
+	margin: 5px 10px 5px 25px;
+	height: 80px;
+	width: 60px;
+}
+
 /*.search-bar {
 	margin: 20px;
 	text-align: left;
@@ -33,3 +52,11 @@ body {
 	border: 2px solid orange;
 	border-radius: 4px;
 }*/
+
+
+
+/*Demo 3 - Reusable Button*/
+.reusable-btn {
+  width: 400px;
+  height: 400px;
+}

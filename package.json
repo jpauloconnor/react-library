@@ -6,6 +6,7 @@
     "lodash": "^4.17.4",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-router": "^4.2.0",
     "youtube-api-search": "0.0.5"
   },
   "devDependencies": {

@@ -1,37 +1,82 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import ReactDOM from 'react-dom';
 import './App.css';
+import HelloReact from './components/01_hello_react';
+import Header from './components/02_header';
+import JSXRules from './components/03_jsx';
+import Props from './components/04_props';
+import State from './components/05_state';
+import SetState from './components/06_setState';
 import Video from './components/video/video';
-import HelloWorld from './components/Demo_0.01';
-import FunctionalComponent from './components/Demo_0.02';
-import ReusableButton from './components/Demo_0.03';
-import IncrementButtonPartOne from './components/Demo_0.04';
-import IncrementButtonPartTwo from './components/Demo_0.05';
-import Title from './components/title';
-import Footer from './components/footer';
+import Footer from './components/07_footer'
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <div>
-          <h1>First Increment Button no state change</h1>
-          <p>This button simply sets the state, but there is no change.</p>
-          <IncrementButtonPartOne />
-        </div>
-        <div>
-          <h1>Second Increment Button</h1>
-          <p>This button will have a state change.</p>
-          <IncrementButtonPartTwo />
-        </div>
-        <br />
+const routes = [
+  { path: '/',
+    exact: true,
+    sidebar: () => <div>Home</div>,
+    main: () => <h2>Home</h2>
+  },
+  { path: '/jsx',
+    sidebar: () => <div>JSX</div>,
+    main: () => <JSXRules />
+  },
+  { path: '/props',
+    sidebar: () => <div>Props</div>,
+    main: () => <Props />
+  },
+    { path: '/state',
+    sidebar: () => <div>State</div>,
+    main: () => <State />
+  },
+    { path: '/setState',
+    sidebar: () => <div>setState</div>,
+    main: () => <SetState />
+  },
+  { path: '/video',
+    sidebar: () => <div>Video</div>,
+    main: () => <Video />
+  },
+]
+
+const App = () => (
+  <div>
+  <Header />
+  <Router>
+    <div style={{ display: 'flex' }}>
+      <div style={{
+        padding: '10px',
+        width: '20%',
+        background: '#f0f0f0'
+      }}>
+        <ul style={{ listStyleType: 'none', padding: 0 }}>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/jsx">JSX</Link></li>
+          <li><Link to="/props">Props</Link></li>
+          <li><Link to="/state">State</Link></li>
+          <li><Link to="/setstate">setState</Link></li>
+          <li><Link to="/video">Video</Link></li>
+
+        </ul>
       </div>
-    );
-  }
-}
 
-export default App;
+      <div style={{ flex: 1, padding: '10px' }}>
+        {routes.map((route, index) => (
+          <Route
+            key={index}
+            path={route.path}
+            exact={route.exact}
+            component={route.main}
+          />
+        ))}
+      </div>
+    </div>
+  </Router>
+  </div>
+)
+
+export default App
