@@ -7,6 +7,7 @@ import JSXRules from '../components/04_jsx';
 import Props from '../components/04_props';
 import State from '../components/05_state';
 import SetState from '../components/06_setState';
+import ToDoApp from '../components/todo'
 import Video from '../components/video/video';
 import Footer from '../components/07_footer'
 
@@ -48,18 +49,9 @@ export const routes = [
     sidebar: () => <div>Video</div>,
     main: () => <Video />
   },
+  { path: '/todo',
+    sidebar: () => <div>To Do</div>,
+    main: () => <ToDoApp />
+  },
 ]
 
-
-// class Routes extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//         orderColumns: ORDER_COLUMNS
-//     };
-//   }
-//   ...
-
-// }
-
-// export default Routes;

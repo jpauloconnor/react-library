@@ -1,16 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
-import FunctionalComponent from './components/01_functional_component';
-import FatArrow from './components/02_fat_arrow';
 import Header from './components/02_header';
-import ClassComponent from './components/03_class_component';
-import JSXRules from './components/04_jsx';
-import Props from './components/04_props';
-import State from './components/05_state';
-import SetState from './components/06_setState';
-import Video from './components/video/video';
-import Footer from './components/07_footer'
+
 import {
   BrowserRouter as Router,
   Route,
@@ -40,6 +32,7 @@ const App = () => (
             <li><Link to="/state">State</Link></li>
             <li><Link to="/setstate">setState</Link></li>
             <li><Link to="/video">Video</Link></li>
+            <li><Link to="/todo">To Do App</Link></li>
 
           </ul>
         </div>

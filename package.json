@@ -7,6 +7,7 @@
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
     "youtube-api-search": "0.0.5"
   },
   "devDependencies": {
