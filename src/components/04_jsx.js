@@ -16,3 +16,6 @@ export default class JSXRules extends Component {
 		);
 	}
 }
+
+
+//TODO: Add images of babel screenshots.

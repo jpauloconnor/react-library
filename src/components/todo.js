@@ -9,6 +9,7 @@ class NewTodo extends Component {
         let text = this.refs.newTodoText.value;
         if (text) {
             this.props.createTask(text);
+            console.log(this.props)
             this.refs.newTodoText.value = '';
         }
     }
@@ -46,10 +47,12 @@ class Todo extends Component {
         event.preventDefault();
 
         this.props.toggle(this.props.todo);
+        console.log(this.props);
     }
 
     render() {
         let todo = this.props.todo;
+        console.log('todo:', todo);
         if (todo.done) {
             return (
                 <li>

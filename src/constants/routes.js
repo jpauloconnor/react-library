@@ -6,8 +6,10 @@ import ClassComponent from '../components/03_class_component';
 import JSXRules from '../components/04_jsx';
 import Props from '../components/04_props';
 import State from '../components/05_state';
+import LifeCycle from '../components/lifecycle'
 import SetState from '../components/06_setState';
 import ToDoApp from '../components/todo'
+import Timer from '../components/timer'
 import Video from '../components/video/video';
 import Footer from '../components/07_footer'
 
@@ -35,7 +37,7 @@ export const routes = [
   },
   { path: '/props',
     sidebar: () => <div>Props</div>,
-    main: () => <Props label="Button" />
+    main: () => <div><h1>Props</h1><Props label="Button" /><Props label="Button 2" /></div>
   },
     { path: '/state',
     sidebar: () => <div>State</div>,
@@ -45,6 +47,10 @@ export const routes = [
     sidebar: () => <div>setState</div>,
     main: () => <SetState />
   },
+   { path: '/lifecycle',
+    sidebar: () => <div>Life Cycle</div>,
+    main: () => <LifeCycle />
+  },
   { path: '/video',
     sidebar: () => <div>Video</div>,
     main: () => <Video />
@@ -52,6 +58,10 @@ export const routes = [
   { path: '/todo',
     sidebar: () => <div>To Do</div>,
     main: () => <ToDoApp />
+  },
+  { path: '/timer',
+    sidebar: () => <div>Timer</div>,
+    main: () => <Timer />
   },
 ]
 

@@ -8,6 +8,7 @@ import React from 'react';
 //Variable will never change
 
 const Props = function(props){
+	console.log(props);
 	return(
 		<button className="btn btn-primary"> {props.label}</button>
 	);
