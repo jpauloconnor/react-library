@@ -4,19 +4,24 @@
   "private": true,
   "dependencies": {
     "lodash": "^4.17.4",
+    "node-sass": "^4.5.3",
+    "proxyquire": "^1.8.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.11",
+    "rewire": "^2.5.2",
+    "sass-loader": "^6.0.6",
     "youtube-api-search": "0.0.5"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "start": "node scripts/customized-config start",
+    "build": "node scripts/customized-config build",
+    "test": "node scripts/customized-config test --env=jsdom",
     "eject": "react-scripts eject"
   }
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import Home from '../components/00_home';
 import FunctionalComponent from '../components/01_functional_component';
 import FatArrow from '../components/02_fat_arrow';
 import Header from '../components/02_header';
@@ -14,10 +15,10 @@ import Video from '../components/video/video';
 import Footer from '../components/07_footer'
 
 export const routes = [
-  { path: '/',
+  { path: '/' || '/home',
     exact: true,
     sidebar: () => <div>Home</div>,
-    main: () => <h2>Home</h2>
+    main: () => <h2><Home /></h2>
   },
   { path: '/functionalcomponent',
     sidebar: () => <div>Functional Component</div>,
