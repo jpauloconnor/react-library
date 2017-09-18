@@ -7,11 +7,15 @@ import ClassComponent from '../components/03_class_component';
 import JSXRules from '../components/04_jsx';
 import Props from '../components/04_props';
 import State from '../components/05_state';
-import LifeCycle from '../components/lifecycle'
+import LifeCycle from '../components/lifecycle';
+import WillMount from '../components/lifecycle_will_mount'
+import Clock from '../components/lifecycle_will_mount_example'
 import SetState from '../components/06_setState';
 import ToDoApp from '../components/todo'
-import Timer from '../components/timer'
+import Timer from '../components/timer';
 import Video from '../components/video/video';
+import Comment from '../components/comment';
+import FriendForm from '../components/axios_post_request';
 import Footer from '../components/07_footer'
 
 export const routes = [
@@ -52,9 +56,18 @@ export const routes = [
     sidebar: () => <div>Life Cycle</div>,
     main: () => <LifeCycle />
   },
+   
   { path: '/video',
     sidebar: () => <div>Video</div>,
     main: () => <Video />
+  },
+   { path: '/willmount',
+    sidebar: () => <div>willMount</div>,
+    main: () => <WillMount />
+  },
+  { path: '/willmountadv',
+    sidebar: () => <div>Will Mount Example</div>,
+    main: () => <Clock />
   },
   { path: '/todo',
     sidebar: () => <div>To Do</div>,
@@ -64,5 +77,13 @@ export const routes = [
     sidebar: () => <div>Timer</div>,
     main: () => <Timer />
   },
+  { path: '/comment',
+    sidebar: () => <div>Comment</div>,
+    main: () => <Comment />
+  }, 
+   { path: '/friendform',
+    sidebar: () => <div>HTTP Requests</div>,
+    main: () => <FriendForm />
+  }, 
 ]
 

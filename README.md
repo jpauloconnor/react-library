@@ -21,7 +21,18 @@ This is a collection of demos of React.js. These demos are purposely written in 
 
 4. Run npm install.
 
+
+## Random resources to dive into from research
+1. Form Validation: https://github.com/mikepro4/react-signup-form/blob/master/app/components/PasswordValidator.js
+
+2. Fetch Demo: https://codepen.io/agconti/pen/GmewbO
+
+3. Comment Form: https://codepen.io/chriscoyier/pen/YqwXQG
+
+4. Cool site overall: https://developmentarc.gitbooks.io/react-indepth/content/life_cycle/birth/premounting_with_componentwillmount.html
+
 ## Index
+
 
 1. [Class Components](#class-components)
 

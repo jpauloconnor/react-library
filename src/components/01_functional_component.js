@@ -8,22 +8,30 @@ const FunctionalComponent = function(){
 			<h1> Functional Component</h1> 
 
 			<dl className="dl-horizontal">
-			    <dt>TODO</dt>
-			    <dd>TODO</dd>
-			    <dt>TODO</dt>
-			    <dd>TODO</dd>
+			    <dt>No this </dt>
+			    <dd>Unlike class components, functional ones don't use 'this'</dd>
+			    <dt>No state</dt>
+			    <dd>These are dumb components for UI. Don't worry about changing state with these.</dd>
 			    <dt>TODO</dt>
 			    <dd>TOOD</dd>
 			</dl>
-			<div className="highlight">
-				<pre>
-					<code>
-						<span className="kr">const </span><span className="nx">Hello</span><span className="o"> = </span><span className="kd">function()</span><span>{`{`}</span>
-						<span class="k">return</span>
+			<div className="container" id="fat-arrow">
+<pre><code className="javascript">{`
+		import React from 'react';
 
-					</code>
-				</pre>
-			</div>
+		//Functional Component with a fat arrow
+		const FatArrow = () => {
+			return(
+				<nav className="navbar navbar-inverse">
+					<h1>Fat Arrow</h1>
+				</nav>
+				);
+		}
+
+		export default FatArrow;
+`}
+</code></pre>
+</div>
 		</div>
 	);
 };
