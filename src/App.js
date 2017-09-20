@@ -11,7 +11,6 @@ import {
 
 import { routes } from './constants/routes';
 
-
 const App = () => (
   <div>
     <Header />

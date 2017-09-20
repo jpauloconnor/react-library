@@ -4,11 +4,10 @@ import React from 'react';
 
 const Home = function(){
 	return(
-		<div>
-			<h1>Welcome</h1> 
-			<p>This is a React Demo about React and built with React.</p>
-			<p>Check out the repo: <a href="https://github.com/jpauloconnor/react-library">here</a></p>
-			<p>TODO: Fix styling here. </p>
+		<div className="home">
+			<h1>Welcome to a React Fundamentals App</h1> 
+			<p>This is a React Demo about React and <strong><i>built with React.</i></strong></p>
+			<p>Check out the repo: <a href="https://github.com/jpauloconnor/react-library" target="blank">here</a></p>
 		</div>
 	);
 };

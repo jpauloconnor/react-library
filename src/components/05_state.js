@@ -5,7 +5,7 @@ import {Component} from 'react';
 export default class State extends Component {
 	constructor(props){
 		super(props);
-		this.state = {counter: 0};
+		this.state = {counter: 1};
 	}
 	render(){
 		return(

@@ -207,3 +207,60 @@ body {
 #fat-arrow{
   text-align: left;
 }
+
+
+
+/*TODO: Just starting to look at CSS. Some stubs here. Sloppy still*/
+/* Home Component */
+.home h1{
+  text-align: left;
+  font-size: 24px;
+}
+
+.home p{
+  text-align: left;
+  font-size: 16px;
+}
+
+
+/* Functional Component */
+.section-title{
+  font-family: "Belleza", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  text-decoration-style: bold;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: .8em;
+  margin-bottom: 1em;
+}
+
+.section-sub-title{
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: .8em;
+  margin-top: 1em;
+}
+.learning-list {
+  overflow: hidden;
+  width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px; 
+}
+
+.learning-point-item-name {
+  float: left;
+  margin-right: 5%;
+  width: 30%;
+}
+  
+.learning-point-item-text {
+  float: left; 
+  width: 55%;
+  margin-bottom: 2em; 
+}

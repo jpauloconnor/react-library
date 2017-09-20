@@ -5,33 +5,37 @@ import React from 'react';
 const FunctionalComponent = function(){
 	return(
 		<div>
-			<h1> Functional Component</h1> 
+			<h1 className="section-title"> Functional Component</h1> 
 
-			<dl className="dl-horizontal">
-			    <dt>No this </dt>
-			    <dd>Unlike class components, functional ones don't use 'this'</dd>
-			    <dt>No state</dt>
-			    <dd>These are dumb components for UI. Don't worry about changing state with these.</dd>
-			    <dt>TODO</dt>
-			    <dd>TOOD</dd>
+			<h2 className="section-sub-title"> Key Points </h2> 
+			<dl className="learning-list">
+				<dt className="learning-point-item-name">Presentational </dt>
+			    <dd className="learning-point-item-text">Often used for simply rendering a small chunk of jsx to the dom.</dd>
+			    <dt className="learning-point-item-name">No 'this' keyword </dt>
+			    <dd className="learning-point-item-text">Unlike class components, functional ones don't use 'this'</dd>
+			    <dt className="learning-point-item-name">No state</dt>
+			    <dd className="learning-point-item-text">These are dumb components for UI. Don't worry about changing state with these.</dd>
 			</dl>
+
+			<h2 className="section-sub-title"> Code Snippet </h2> 
+
 			<div className="container" id="fat-arrow">
-<pre><code className="javascript">{`
-		import React from 'react';
+				<pre><code className="javascript">{`
+						import React from 'react';
 
-		//Functional Component with a fat arrow
-		const FatArrow = () => {
-			return(
-				<nav className="navbar navbar-inverse">
-					<h1>Fat Arrow</h1>
-				</nav>
-				);
-		}
+						//Functional Component with a fat arrow
+						const FatArrow = () => {
+							return(
+								<nav className="navbar navbar-inverse">
+									<h1>Fat Arrow</h1>
+								</nav>
+							);
+						}
 
-		export default FatArrow;
-`}
-</code></pre>
-</div>
+						export default FatArrow;
+				`}
+				</code></pre>
+			</div>
 		</div>
 	);
 };
