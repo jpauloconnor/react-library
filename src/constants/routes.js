@@ -42,7 +42,7 @@ export const routes = [
   },
   { path: '/props',
     sidebar: () => <div>Props</div>,
-    main: () => <div><h1>Props</h1><Props label="Button" /><Props label="Button 2" /></div>
+    main: () => <div><h1>Props</h1><Props label="Button" /></div>
   },
     { path: '/state',
     sidebar: () => <div>State</div>,
