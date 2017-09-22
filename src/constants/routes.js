@@ -5,7 +5,7 @@ import FatArrow from '../components/02_fat_arrow';
 import Header from '../components/02_header';
 import ClassComponent from '../components/03_class_component';
 import JSXRules from '../components/04_jsx';
-import Props from '../components/04_props';
+import Props from '../components/04_props_advanced';
 import State from '../components/05_state';
 import LifeCycle from '../components/lifecycle';
 import WillMount from '../components/lifecycle_will_mount'
