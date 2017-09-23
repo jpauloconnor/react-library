@@ -223,7 +223,47 @@ body {
 }
 
 
+
+hr.key-points {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr.key-points:after {
+    content: "Key Points";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+hr.codepen {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr.codepen:after {
+    content: "Code Snippet";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+
 /* Functional Component */
+
+
 .section-title{
   font-family: "Belleza", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
   text-align: center;
@@ -234,7 +274,7 @@ body {
   letter-spacing: -0.04em;
   line-height: 1.1;
   text-decoration-style: bold;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 0px solid #ccc;
   padding-bottom: .8em;
   margin-bottom: 1em;
 }

@@ -1,13 +1,13 @@
 import React from 'react';
-
+import Codepen from 'react-codepen';
 //Functional Component Example
 
 const FunctionalComponent = function(){
 	return(
 		<div>
-			<h1 className="section-title"> Functional Component</h1> 
+			<h1 className="section-title"> Functional Components</h1> 
+			<hr className="key-points" />
 
-			<h2 className="section-sub-title"> Key Points </h2> 
 			<dl className="learning-list">
 				<dt className="learning-point-item-name">Presentational </dt>
 			    <dd className="learning-point-item-text">Often used for simply rendering a small chunk of jsx to the dom.</dd>
@@ -17,7 +17,8 @@ const FunctionalComponent = function(){
 			    <dd className="learning-point-item-text">These are dumb components for UI. Don't worry about changing state with these.</dd>
 			</dl>
 
-			<h2 className="section-sub-title"> Code Snippet </h2> 
+			<hr className="codepen" />
+			<Codepen user="jamespauloconnor" hash="wroGWJ" />
 
 		</div>
 	);
