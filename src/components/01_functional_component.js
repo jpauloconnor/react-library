@@ -19,23 +19,6 @@ const FunctionalComponent = function(){
 
 			<h2 className="section-sub-title"> Code Snippet </h2> 
 
-			<div className="container" id="fat-arrow">
-				<pre><code className="javascript">{`
-						import React from 'react';
-
-						//Functional Component with a fat arrow
-						const FatArrow = () => {
-							return(
-								<nav className="navbar navbar-inverse">
-									<h1>Fat Arrow</h1>
-								</nav>
-							);
-						}
-
-						export default FatArrow;
-				`}
-				</code></pre>
-			</div>
 		</div>
 	);
 };
