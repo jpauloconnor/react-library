@@ -1,11 +1,37 @@
-body {
+
+html, body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  color: #f2f2f2;
 }
 
-.error{ color: red; }
 
+body, section::before {
+  background-image: url('./img/matrix.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+}
+
+
+section::before {
+  content: "";
+  display: block;
+  z-index: -1;
+  -webkit-filter: blur(1.5px); /* Safari */
+  filter: blur(1.5px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.error{ 
+  color: red; 
+}
 
 
 .navbar {
@@ -23,6 +49,13 @@ body {
 	margin: 5px 10px 5px 25px;
 	height: 80px;
 	width: 60px;
+}
+
+a {
+  color: #1a000d;
+}
+li {
+  list-style-type: none;
 }
 
 /*.search-bar {
@@ -275,7 +308,6 @@ hr.codepen:after {
   line-height: 1.1;
   text-decoration-style: bold;
   border-bottom: 0px solid #ccc;
-  padding-bottom: .8em;
   margin-bottom: 1em;
 }
 
