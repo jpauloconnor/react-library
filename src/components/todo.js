@@ -17,7 +17,7 @@ class NewTodo extends Component {
     render() {
         return (
             <form onSubmit={this.create.bind(this)}>
-                <label>New TODO:</label> <input type="text" ref="newTodoText"/> <button type="submit">+</button>
+                <label>New TODO:</label> <input type="text" ref="newTodoText"/> <button className="button" type="submit">+</button>
             </form>
         );
     }
@@ -108,9 +108,31 @@ export default class TodoApp extends Component {
     
     render() {
         return (
-            <div>
-                <NewTodo createTask={this.createTask.bind(this)} />
-                <TodoList todos={this.state.todos} toggle={this.toggleTask.bind(this)} />
+            <div className="main">
+                <div className="mainDiv">
+                    <h1 className="section-title">React To Do List</h1>
+
+                    <hr className="key-points" />
+
+                    <p>lorem ipsum.</p>
+                    <ul>
+                        <li>lorem ipsum</li>
+                        <li>lorem ipsum</li>
+                    </ul>
+
+                    <hr className="explanation" />
+
+                    <p>lorem ipsum.</p>
+
+
+                    <hr className="codepen" /> {/*change to something else, like example or project*/}
+
+                    <NewTodo createTask={this.createTask.bind(this)} />
+                    <TodoList todos={this.state.todos} toggle={this.toggleTask.bind(this)} />
+
+                    <p>Now, let's see a timer in React.</p>
+                    <button id="butn" className="button">Next</button>
+                </div>
             </div>
         );
     }

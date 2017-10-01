@@ -86,14 +86,40 @@ export default class Comment extends Component {
   
   render() {
     return (
-      <div className="callout secondary">
-        <h4 className="leave-comment">Add a Comment</h4>
-        <form className="post-edit" ref="commentForm" onSubmit={this.processComment}>
-          <input type="text" ref="name" placeholder="Your Name" required/>
-          <textarea ref="desc" placeholder="Add your comment here" required/>
-          <button id="submit" type="submit" className="button button-outline comment-button action-button expand-right">Add Comment</button>
-        </form>
+      <div className="main">
+        <div className="mainDiv">
+          <h1 className="section-title">Comment Tool</h1>
+
+          <hr className="key-points" />
+
+          <p>lorem ipsum.</p>
+          <ul>
+            <li>lorem ipsum</li>
+            <li>lorem ipsum</li>
+          </ul>
+
+          <hr className="explanation" />
+
+          <p>lorem ipsum.</p>
+
+
+          <hr className="codepen" /> {/*change to something else, like example or project*/}
+
+
+          <div className="callout secondary">
+            <h4 className="leave-comment">Add a Comment</h4>
+            <form className="post-edit" ref="commentForm" onSubmit={this.processComment}>
+              <input className="commentInput" type="text" ref="name" placeholder="Your Name" required/>
+              <textarea className="commentInput" ref="desc" placeholder="Add your comment here" required/>
+              <button id="submit" type="submit" className="button button-outline comment-button action-button expand-right">Add Comment</button>
+            </form>
+          </div>
+
+          <p>Now, let's look at the Life Cycle.</p>
+          <button id="butn" className="button">Next</button>
+        </div>
       </div>
+
     )
   }
 };
@@ -106,7 +132,7 @@ export default class Comment extends Component {
 */
  class NewComment extends Component {
   render() {
-    return (
+    return ( 
       <div className="block-comment-content module text">
         <div className="comment-user">
           <div className="comment-user-avatar-wrap">

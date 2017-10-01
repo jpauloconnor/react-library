@@ -42,34 +42,55 @@ class FriendForm extends Component {
 
 	render() {
 		return (
-			<div>
-				<div className="col-xs-4">
-					<form onSubmit={this.handleSubmit.bind(this)}>
-						<h3>Enter a Friend!</h3>
+			<div className="main">
+				<div className="mainDiv">
 
-						<fieldset className="form-group">
-							<label>Friend's Name:</label>
-							<input type="text" 
-								   ref="name"
-								   name="name"
-								   className="form-control" 
-							/>
-						</fieldset>
+					<h1 className="section-title">React Friends List</h1> 
 
-						<fieldset className="form-group">
-							<label>Friend's Age:</label>
-							<input type="text" 
-								   ref="age"
-								   name="age"
-								   className="form-control" 
-							/>
-						</fieldset>
+				
+					<hr className="key-points" />
 
-						<button className="btn btn-success" type="submit">Save Friend</button>
-					</form>
-				</div>
-				<div>
-					{this.renderFriendsList(this.state.friends)}
+					<p>lorem ipsum.</p>
+					<ul>
+						<li>lorem ipsum</li>
+						<li>lorem ipsum</li>
+					</ul>
+
+					<hr className="explanation" />
+
+					<p>lorem ipsum.</p>
+
+
+					<hr className="codepen" /> {/*change to something else, like example or project*/}
+
+						<div className="col-xs-4">
+							<form onSubmit={this.handleSubmit.bind(this)}>
+								<h3>Enter a Friend!</h3>
+
+								<fieldset className="form-group">
+									<label>Friend's Name:</label>
+									<input type="text" 
+										   ref="name"
+										   name="name"
+										   className="form-control" 
+									/>
+								</fieldset>
+
+								<fieldset className="form-group">
+									<label>Friend's Age:</label>
+									<input type="text" 
+										   ref="age"
+										   name="age"
+										   className="form-control" 
+									/>
+								</fieldset>
+
+								<button className="btn btn-success" type="submit">Save Friend</button>
+							</form>
+						</div>
+					<div>
+						{this.renderFriendsList(this.state.friends)}
+					</div>
 				</div>
 			</div>
 		);

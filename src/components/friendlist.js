@@ -61,13 +61,15 @@ class FriendList extends Component {
 	render() {
 		return (
 			<div>
-				<div className="col-xs-2">
-				</div>
-				<div className="col-xs-6">
-					<h3>List of Friends</h3>
-					<ul className="list-group">
-						{this.renderFriends()}
-					</ul>
+				<div>
+					<div className="col-xs-2">
+					</div>
+					<div className="col-xs-6">
+						<h3>List of Friends</h3>
+						<ul className="list-group friends">
+							{this.renderFriends()}
+						</ul>
+					</div>
 				</div>
 			</div>
 		);

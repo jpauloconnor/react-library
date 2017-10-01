@@ -30,6 +30,14 @@ section::before {
 
 .main {
   background-color: rgba(31, 31, 20, 0.7);
+  height: 100%;
+  min-height: 100%;
+}
+
+.mainDiv {
+  margin: auto;
+  width: 90%;
+  padding: 5px;
 }
 
 .error{ 
@@ -61,7 +69,11 @@ li {
   list-style-type: none;
 }
 
-/*.search-bar {
+.button {
+  color: #333333;
+}
+
+.search-bar {
 	margin: 20px;
 	text-align: left;
 }
@@ -87,7 +99,7 @@ li {
 	padding: 10px;
 	border: 2px solid orange;
 	border-radius: 4px;
-}*/
+}
 
 
 
@@ -105,6 +117,7 @@ li {
 p {
   margin-top: 20px;
   line-height: 1.6;
+  font-size: 14px;
 }
 
 a {
@@ -248,29 +261,32 @@ body {
 
 /*TODO: Just starting to look at CSS. Some stubs here. Sloppy still*/
 /* Home Component */
-.home {
-  height: 100%;
-  min-height: 100%;
-}
-.homeDiv {
-  margin: auto;
-  width: 90%;
-  padding: 5px;
-}
-
-.home h1{
-  text-align: left;
-  font-size: 24px;
-}
 
 .home p{
   text-align: left;
-  font-size: 16px;
 }
 
 .home a {
   color: #ff80bf;
   letter-spacing: 1.5px;
+}
+
+hr.basic-rundown {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr.basic-rundown:after {
+    content: "Basic Rundown";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
 }
 
 .home span {
@@ -285,6 +301,31 @@ body {
   height: 250px;
   margin-left: 75px;
   margin-bottom: 50px;
+}
+
+.example p {
+  clear: both;
+}
+
+
+/* All Components */
+
+hr.explanation {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr.explanation:after {
+    content: "Explanation";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
 }
 
 
@@ -325,9 +366,6 @@ hr.codepen:after {
 }
 
 
-/* Functional Component */
-
-
 .section-title{
   font-family: "Belleza", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
   text-align: center;
@@ -342,12 +380,17 @@ hr.codepen:after {
   margin-bottom: 1em;
 }
 
-.section-sub-title{
+/*.section-sub-title{
   text-align: center;
   font-size: 18px;
   padding-bottom: .8em;
   margin-top: 1em;
-}
+}*/
+
+
+
+/* Functional Component */
+
 .learning-list {
   overflow: hidden;
   width: 520px;
@@ -366,4 +409,16 @@ hr.codepen:after {
   float: left; 
   width: 55%;
   margin-bottom: 2em; 
+}
+
+
+
+/* Comment */
+
+.commentInput {
+  color: #333;
+}
+
+.friends {
+  color: #333;
 }

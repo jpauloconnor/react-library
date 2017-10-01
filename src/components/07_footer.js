@@ -6,7 +6,9 @@ export default class Footer extends Component {
     render() {
         return (
             <footer>
-                <p>For more information, see the React Documentation provided by Facebook.</p>
+            	<div className="main">
+                	<p>For more information, see the React Documentation provided by Facebook.</p>
+                </div>
             </footer>
         );
     }

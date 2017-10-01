@@ -19,10 +19,33 @@ export default class WillMount extends Component {
 
 	render(){
 		return(
-			<div>
-				<h1>componentWillMount</h1>
-				<p>TODO: Add a description</p>
-				<button onClick={this.update}>{this.state.val}</button>
+			<div className="main">
+				<div className="mainDiv">
+					<h1 className="section-title">componentWillMount</h1>
+
+				
+					<hr className="key-points" />
+
+					<p>lorem ipsum.</p>
+					<ul>
+						<li>lorem ipsum</li>
+						<li>lorem ipsum</li>
+					</ul>
+
+					<hr className="explanation" />
+
+					<p>lorem ipsum.</p>
+
+
+					<hr className="codepen" /> {/*change to something else, like example or project*/}
+
+
+					<button onClick={this.update} className="button">{this.state.val}</button>
+
+					<p>Now, we'll look at some other examples of React.</p>
+					<button id="butn" className="button">Next</button>
+				</div>
+
 			</div>
 		);
 	}

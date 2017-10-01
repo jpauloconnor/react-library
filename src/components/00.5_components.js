@@ -1,11 +1,12 @@
 import React from 'react';
 
-//Functional Component with a fat arrow
-const FatArrow = () => {
+//landing page
+
+const Components = function(){
 	return(
 		<div className="main">
 			<div className="mainDiv">
-				<h1 className="section-title">Fat Arrow</h1> 
+				<h1 className="section-title">Components</h1> 
 
 			
 				<hr className="key-points" />
@@ -20,11 +21,11 @@ const FatArrow = () => {
 
 				<hr className="codepen" />
 
-				<p>Next, we'll take a look at class components.</p>
+				<p>Moving on, we'll discuss functional components.</p>
 				<button id="butn" className="button">Next</button>
 			</div>
 		</div>
 	);
-}
+};
 
-export default FatArrow;
+export default Components;

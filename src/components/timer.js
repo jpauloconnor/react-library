@@ -26,7 +26,33 @@ export default class Timer extends React.Component {
 
   render() {
     return (
-      <div>Seconds Elapsed: {this.state.secondsElapsed}</div>
+      <div className="main">
+        <div className="mainDiv">
+          <h1 className="section-title">React Timer</h1> 
+
+        
+          <hr className="key-points" />
+
+          <p>lorem ipsum.</p>
+          <ul>
+            <li>lorem ipsum</li>
+            <li>lorem ipsum</li>
+          </ul>
+
+          <hr className="explanation" />
+
+          <p>lorem ipsum.</p>
+
+
+          <hr className="codepen" /> {/*change to something else, like example or project*/}
+
+          <div>Seconds Elapsed: {this.state.secondsElapsed}</div>
+
+          <p>Now, we'll take a look at a React Clock.</p>
+          <button id="butn" className="button">Next</button>
+        </div>
+      </div>
+      
     );
   }
 }

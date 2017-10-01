@@ -2,20 +2,20 @@ import React from 'react';
 import { Component } from 'react';
 
 
-export default class ClassComponent extends Component {
+export default class Constructor extends Component {
 	render(){
 		return(
 			<div className="main">
 				<div className="mainDiv">
-					<h1 className="section-title">Class Components</h1> 
+					<h1 className="section-title">Constructor</h1> 
 
 				
 					<hr className="key-points" />
 
 					<p>lorem ipsum.</p>
 					<ul>
-						<li>Must always have a render method</li>
-						<li>TODO: More content here.</li>
+						<li>lorem ipsum</li>
+						<li>lorem ipsum</li>
 					</ul>
 
 					<hr className="explanation" />
@@ -25,7 +25,7 @@ export default class ClassComponent extends Component {
 
 					<hr className="codepen" />
 
-					<p>Moving on, we'll discuss JSX.</p>
+					<p>Now, let's look at the Life Cycle.</p>
 					<button id="butn" className="button">Next</button>
 				</div>
 			</div>
