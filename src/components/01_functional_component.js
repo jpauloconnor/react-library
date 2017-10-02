@@ -26,7 +26,7 @@ const FunctionalComponent = function(){
 				<p>lorem ipsum</p>
 
 				<hr className="codepen" />
-				<Codepen user="jamespauloconnor" hash="wroGWJ" />
+				<Codepen user="KayleaBritton" hash="oGGgqX" />
 
 				<p>Next, let's talk about the fat arrow for a minute.</p>
 				<button id="butn" className="button">Next</button>

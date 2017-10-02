@@ -5,7 +5,7 @@ import { Component } from 'react';
 export default class Footer extends Component {
     render() {
         return (
-            <footer>
+            <footer className="foot">
             	<div className="main">
                 	<p>For more information, see the React Documentation provided by Facebook.</p>
                 </div>

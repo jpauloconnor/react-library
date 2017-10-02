@@ -24,7 +24,7 @@ export const routes = [
   { path: '/' || '/home',
     exact: true,
     sidebar: () => <div>Home</div>,
-    main: () => <h2><Home /></h2>
+    main: () => <Home />
   },
   { path: '/components',
     sidebar: () => <div>Components</div>,

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Component } from 'react';
+import Codepen from 'react-codepen';
 
+//class components
 
 export default class ClassComponent extends Component {
 	render(){
@@ -24,6 +26,7 @@ export default class ClassComponent extends Component {
 
 
 					<hr className="codepen" />
+					<Codepen user="KayleaBritton" hash="dVVPgM" />
 
 					<p>Moving on, we'll discuss JSX.</p>
 					<button id="butn" className="button">Next</button>
