@@ -91,7 +91,9 @@ code {
   padding: 5px;
 }
 
-
+.code_snippet {
+  height: 300px !important;
+}
 
 
 
@@ -152,6 +154,9 @@ hr.codepen:after {
     background: white;
 }
 
+iframe {
+  height: 350px;
+}
 
 .section-title{
   font-family: "Belleza", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
@@ -217,7 +222,7 @@ hr.basic-rundown:after {
   font-weight: bold;
   text-decoration: underline;
 }
-/* DELETE THIS SOON*/
+
 .example {
   background-image: url('./img/comp.png');
   background-size: cover;

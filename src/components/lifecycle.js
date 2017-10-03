@@ -4,6 +4,9 @@ import { Component } from 'react';
 
 export default class LifeCycle extends Component {
   render() {
+    function next() {
+      window.location.assign('/willmount');
+    }
     return (
       <div className="main">       
         <div className="mainDiv">
@@ -113,7 +116,7 @@ export default class LifeCycle extends Component {
           <hr className="codepen" />
 
           <p>Now, we'll take a closer look at willMount.</p>
-          <button id="butn" className="button">Next</button>
+          <button id="butn" className="button" onClick={next}>Next</button>
 
 
         </div>

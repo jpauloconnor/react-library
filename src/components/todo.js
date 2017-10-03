@@ -107,6 +107,9 @@ export default class TodoApp extends Component {
     }
     
     render() {
+        function next() {
+            window.location.assign('/timer');
+        }
         return (
             <div className="main">
                 <div className="mainDiv">
@@ -131,7 +134,7 @@ export default class TodoApp extends Component {
                     <TodoList todos={this.state.todos} toggle={this.toggleTask.bind(this)} />
 
                     <p>Now, let's see a timer in React.</p>
-                    <button id="butn" className="button">Next</button>
+                    <button id="butn" className="button" onClick={next}>Next</button>
                 </div>
             </div>
         );

@@ -4,6 +4,9 @@ import { Component } from 'react';
 
 export default class Constructor extends Component {
 	render(){
+		function next() {
+			window.location.assign('/lifecycle');
+		}
 		return(
 			<div className="main">
 				<div className="mainDiv">
@@ -26,7 +29,7 @@ export default class Constructor extends Component {
 					<hr className="codepen" />
 
 					<p>Now, let's look at the Life Cycle.</p>
-					<button id="butn" className="button">Next</button>
+					<button id="butn" className="button" onClick={next}>Next</button>
 				</div>
 			</div>
 			
