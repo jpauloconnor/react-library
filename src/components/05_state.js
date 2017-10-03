@@ -4,6 +4,9 @@ import {Component} from 'react';
 
 export default class State extends Component {
 	render(){
+    function next() { {/* function to go to next page, called on button click below*/}
+      window.location.assign('/setstate');
+    }
 		return(
 			<div className="main">
 				<div className="mainDiv">
@@ -24,9 +27,10 @@ export default class State extends Component {
 
 
 					<hr className="codepen" />
+					{/* <Codepen height="350" user="KayleaBritton" hash="" />*/}
 
 					<p>Moving on, we'll discuss setState.</p>
-					<button id="butn" className="button">Next</button>
+					<button id="butn" className="button" onClick={next}>Next</button>
 				</div>
 			</div>
 			

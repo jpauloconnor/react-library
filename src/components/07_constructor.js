@@ -4,7 +4,7 @@ import { Component } from 'react';
 
 export default class Constructor extends Component {
 	render(){
-		function next() {
+		function next() { {/* function to go to next page, called on button click below*/}
 			window.location.assign('/lifecycle');
 		}
 		return(
@@ -27,6 +27,8 @@ export default class Constructor extends Component {
 
 
 					<hr className="codepen" />
+
+				{/* <Codepen height="350" user="KayleaBritton" hash="" />*/}
 
 					<p>Now, let's look at the Life Cycle.</p>
 					<button id="butn" className="button" onClick={next}>Next</button>

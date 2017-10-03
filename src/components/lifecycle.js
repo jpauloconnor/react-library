@@ -114,7 +114,9 @@ export default class LifeCycle extends Component {
 
 
           <hr className="codepen" />
+          {/* <Codepen height="350" user="KayleaBritton" hash="" />*/}
 
+          
           <p>Now, we'll take a closer look at willMount.</p>
           <button id="butn" className="button" onClick={next}>Next</button>
 

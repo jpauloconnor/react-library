@@ -130,6 +130,8 @@ export default class TodoApp extends Component {
 
                     <hr className="codepen" /> {/*change to something else, like example or project*/}
 
+                    {/* <Codepen height="350" user="KayleaBritton" hash="" />*/}
+
                     <NewTodo createTask={this.createTask.bind(this)} />
                     <TodoList todos={this.state.todos} toggle={this.toggleTask.bind(this)} />
 

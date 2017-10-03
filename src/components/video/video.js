@@ -30,6 +30,9 @@ class Video extends Component {
 	}
 
 	render() {
+    function next() { {/* function to go to next page, called on button click below*/}
+      window.location.assign('/todo');
+    }
 		const videoSearch = _.debounce((term)=>{ this.videoSearch(term) }, 1800);
 		return (
 			<div className="main">
@@ -51,12 +54,13 @@ class Video extends Component {
 
 
 		           <hr className="codepen" /> {/*change to something else, like example or project*/}
+		           {/* <Codepen height="350" user="KayleaBritton" hash="" /> -- is this needed? --*/}
 
 		           <SearchBar onSearchTermChange={videoSearch} />
 					<VideoDetail video={this.state.selectedVideo}/>
 
 		           <p>Let's make a to do list next.</p>
-		           <button id="butn" className="button">Next</button>
+		           <button id="butn" className="button" onClick={next}>Next</button>
 		        </div>
 				
 			</div>

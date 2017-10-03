@@ -195,7 +195,7 @@ iframe {
 
 /* Home Component */
 
-.home a {
+a span {
   color: #ff80bf;
   letter-spacing: 1.5px;
 }
@@ -218,7 +218,7 @@ hr.basic-rundown:after {
     background: white;
 }
 
-.home span {
+span {
   font-weight: bold;
   text-decoration: underline;
 }

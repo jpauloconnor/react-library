@@ -85,6 +85,9 @@ export default class Comment extends Component {
   }
   
   render() {
+    function next() { {/* function to go to next page, called on button click below*/}
+      window.location.assign('/friendform');
+    }
     return (
       <div className="main">
         <div className="mainDiv">
@@ -104,6 +107,7 @@ export default class Comment extends Component {
 
 
           <hr className="codepen" /> {/*change to something else, like example or project*/}
+          {/* <Codepen height="350" user="KayleaBritton" hash="" /> -- is this needed? --*/}
 
 
           <div className="callout secondary">
@@ -116,7 +120,7 @@ export default class Comment extends Component {
           </div>
 
           <p>Now, let's look at the Life Cycle.</p>
-          <button id="butn" className="button">Next</button>
+          <button id="butn" className="button"  onClick={next}>Next</button>
         </div>
       </div>
 

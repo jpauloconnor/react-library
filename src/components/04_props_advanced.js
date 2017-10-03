@@ -3,11 +3,19 @@ import React, { Component } from 'react';
 
 export default class Props extends Component {
   render(){
+    function next() { {/* function to go to next page, called on button click below*/}
+      window.location.assign('/state');
+    }
     return(
       <div className="main">
         <div className="mainDiv">
           <h1 className="section-title">Props</h1> 
 
+          <hr className="basic-rundown" />
+
+
+          <p>Basically, props stands for an object of data that holds name-value pairs that we want to access
+          in the component.</p>
         
           <hr className="key-points" />
 
@@ -23,9 +31,10 @@ export default class Props extends Component {
 
 
           <hr className="codepen" />
+          {/* <Codepen height="350" user="KayleaBritton" hash="" /> -- is this needed? --*/}
 
           <p>Now, let's look at State.</p>
-          <button id="butn" className="button">Next</button>
+          <button id="butn" className="button" onClick={next}>Next</button>
         </div>
       </div>
     );

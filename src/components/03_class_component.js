@@ -6,7 +6,7 @@ import Codepen from 'react-codepen';
 
 export default class ClassComponent extends Component {
 	render(){
-		function next() {
+		function next() { {/* function to go to next page, called on button click below*/}
 			window.location.assign('/jsx');
 		}
 		return(
@@ -14,12 +14,19 @@ export default class ClassComponent extends Component {
 				<div className="mainDiv">
 					<h1 className="section-title">Class Components</h1> 
 
+					<hr className="basic-rundown" /> 
+
+					<p>The fat arrow is an ES6 construct for functions. </p>
+
 				
 					<hr className="key-points" />
 
-					<p>lorem ipsum.</p>
+					<dl className="learning-list">
+						<dt className="learning-point-item-name">Render </dt>
+					    <dd className="learning-point-item-text">Class components must always have a render method.</dd>
+					</dl>
 					<ul>
-						<li>Must always have a render method</li>
+						<li></li>
 						<li>TODO: More content here.</li>
 					</ul>
 
@@ -36,7 +43,7 @@ export default class ClassComponent extends Component {
 
 
 					<hr className="codepen" />
-					<Codepen height="350" user="KayleaBritton" hash="dVVPgM" className="code_snippet"/>
+					<Codepen height="350" user="KayleaBritton" hash="dVVPgM" />
 
 					<p>Moving on, we'll discuss JSX.</p>
 					<button id="butn5" className="button" onClick={next}>Next</button>

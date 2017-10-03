@@ -4,6 +4,9 @@ import { Component } from 'react';
 
 export default class JSXRules extends Component {
 	render(){
+		function next() {
+			window.location.assign('/props');
+		}
 		return(
 			<div className="ain">
 				<div className="mainDiv">
@@ -27,8 +30,10 @@ export default class JSXRules extends Component {
 
 					<hr className="codepen" />
 
+					{/* <Codepen height="350" user="KayleaBritton" hash="" />*/}
+
 					<p>Now, we'll talk about props.</p>
-					<button id="butn" className="button">Next</button>
+					<button id="butn" className="button" onClick={next}>Next</button>
 				</div>
 			</div>
 		);

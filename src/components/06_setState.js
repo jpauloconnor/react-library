@@ -3,6 +3,9 @@ import {Component} from 'react';
 
 export default class SetState extends Component {
 	render(){
+    function next() { {/* function to go to next page, called on button click below*/}
+      window.location.assign('/constructor');
+    }
 		return(
 			<div className="main">
 				<div className="mainDiv">
@@ -23,9 +26,10 @@ export default class SetState extends Component {
 
 
 					<hr className="codepen" />
+					{/* <Codepen height="350" user="KayleaBritton" hash="" />*/}
 
 					<p>Now, we'll take a look at Constructor.</p>
-					<button id="butn" className="button">Next</button>
+					<button id="butn" className="button" onClick={next}>Next</button>
 				</div>
 			</div>
 			

@@ -31,6 +31,9 @@ export default class Clock extends React.Component {
 
   }
   render() {
+    function next() { {/* function to go to next page, called on button click below*/}
+      window.location.assign('/comment');
+    }
     {/*console.log("Render")*/}
     return(
       <div className="main">
@@ -52,11 +55,12 @@ export default class Clock extends React.Component {
 
 
             <hr className="codepen" /> {/*change to something else, like example or project*/}
+            {/* <Codepen height="350" user="KayleaBritton" hash="" /> -- is this needed? --*/}
 
              <p>{this.state.time}</p>
 
             <p>Now, we'll take a look at a comment form.</p>
-            <button id="butn" className="button">Next</button>
+            <button id="butn" className="button" onClick={next}>Next</button>
           </div>
         </div>
 
