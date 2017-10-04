@@ -38,7 +38,7 @@ export default class Components extends Component {
 					<hr className="explanation" />
 
 					<p>Looking at the code snippet below, we can see two lines being rendered on the page.</p>
-					<p>If you look at the Babel tab you can see that these two lines are actually two different
+					<p>If you look at the color coding or the Babel tab, you can see that these two lines are actually two different
 					components(One and Two) that are called inside of another component(App). You can change 
 					either component One or Two without having to change the other.</p>
 					<p>You can also see in the code that these two components don't look exactly the same. That's 

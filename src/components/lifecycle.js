@@ -3,6 +3,11 @@ import { Component } from 'react';
 
 
 export default class LifeCycle extends Component {
+
+
+click (event) {
+  {(event.target.ref === "getInitialState") ? this.refs.getInitialState.removeClassName('description') : this.refs.getInitialState.addClassName('description')}
+  }
   render() {
     function next() {
       window.location.assign('/willmount');
@@ -13,20 +18,15 @@ export default class LifeCycle extends Component {
           {/*<img className="logo" src="https://facebook.github.io/react/img/logo.svg" />*/}
           <h1 className="section-title">Lifecycle</h1> 
 
-          <hr className="key-points" />
+          <hr className="basic-rundown" />
 
-          <p>lorem ipsum.</p>
-          <ul>
-            <li>lorem ipsum</li>
-            <li>lorem ipsum</li>
-          </ul>
+          <p>Components have lifecycle methods that allow you to run code at particular times in the process.</p>
+          <p>If you prefix your method with "will" your code will run before something happens but if you use 
+          "did" the method will run after something happens.</p>
 
-          <hr className="explanation" />
-
-   
 
           <ul className="descriptions">
-            <li className="description" id="getInitialState">
+            <li className="description" ref="getInitialState">
               <h2 className="heading heading--2">getInitialState</h2>
               <p>Invoked once before the component is mounted. The return value will be used as the initial value of <code>this.state</code></p>
             </li>
@@ -88,34 +88,36 @@ export default class LifeCycle extends Component {
             <li className="description__close"><a href="#">×</a></li>
           </ul>
 
+
+          <hr className="key-points" />
+
+          
+
           <div className="lanes">
-            <ul className="lane">
-              <li className="lane__title">Mounting</li>
-              <li className="lane__item"><a className="step" href="#getInitialState">getInitialState</a></li>
-              <li className="lane__item"><a className="step" href="#componentWillMount">componentWillMount</a></li>  
-              <li className="lane__item"><a className="step" href="#render">render</a></li>
-              <li className="lane__item"><a className="step" href="#componentDidMount">componentDidMount</a></li>  
+            <ul className="lane"><h2 className="lane__title">Mounting:</h2>
+              
+              <li className="lane__item"><a className="step" href="#getInitialState" onClick={this.click}>getInitialState</a></li>
+              <li className="lane__item"><a className="step" href="#componentWillMount" onClick={this.click}>componentWillMount</a></li>  
+              <li className="lane__item"><a className="step" href="#render" onClick={this.click}>render</a></li>
+              <li className="lane__item"><a className="step" href="#componentDidMount" onClick={this.click}>componentDidMount</a></li>  
             </ul>
 
-            <ul className="lane">
-              <li className="lane__title">Updating</li>
-              <li className="lane__item"><a className="step" href="#componentWillReceiveProps">componentWillReceiveProps</a></li>
-              <li className="lane__item"><a className="step" href="#shouldComponentUpdate">shouldComponentUpdate</a></li>
-              <li className="lane__item"><a className="step" href="#componentWillUpdate">componentWillUpdate</a></li>  
-              <li className="lane__item"><a className="step" href="#render">render</a></li>
-              <li className="lane__item"><a className="step" href="#componentDidUpdate">componentDidUpdate</a></li>  
+            <ul className="lane"><h2 className="lane__title">Updating:</h2>
+              <li className="lane__item"><a className="step" href="#componentWillReceiveProps" onClick={this.click}>componentWillReceiveProps</a></li>
+              <li className="lane__item"><a className="step" href="#shouldComponentUpdate" onClick={this.click}>shouldComponentUpdate</a></li>
+              <li className="lane__item"><a className="step" href="#componentWillUpdate" onClick={this.click}>componentWillUpdate</a></li>  
+              <li className="lane__item"><a className="step" href="#render" onClick={this.click}>render</a></li>
+              <li className="lane__item"><a className="step" href="#componentDidUpdate" onClick={this.click}>componentDidUpdate</a></li>  
             </ul>
 
-            <ul className="lane">
-              <li className="lane__title">Unmounting</li>
-              <li className="lane__item"><a className="step" href="#componentWillUnmount">componentWillUnmount</a></li>  
+            <ul className="lane"><h2 className="lane__title">Unounting:</h2>
+              <li className="lane__item"><a className="step" href="#componentWillUnmount" onClick={this.click}>componentWillUnmount</a></li>  
             </ul>
           </div>
 
 
-          <hr className="codepen" />
-          {/* <Codepen height="350" user="KayleaBritton" hash="" />*/}
 
+          
           
           <p>Now, we'll take a closer look at willMount.</p>
           <button id="butn" className="button" onClick={next}>Next</button>

@@ -91,9 +91,6 @@ code {
   padding: 5px;
 }
 
-.code_snippet {
-  height: 300px !important;
-}
 
 
 
@@ -173,6 +170,33 @@ iframe {
 }
 
 
+/* Key Points */
+dt, dd {
+  padding-top: 18px;
+}
+
+.learning-list {
+  overflow: hidden;
+  width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px; 
+  height: auto;
+}
+
+.learning-point-item-name {
+  float: left;
+  margin-right: 5%;
+  width: 30%;
+}
+  
+.learning-point-item-text {
+  float: left; 
+  width: 55%;
+  margin-bottom: 2em; 
+}
+
+
 
 /* Nav Bar */
 
@@ -237,29 +261,6 @@ span {
 }
 
 
-/* Functional Component */
-
-.learning-list {
-  overflow: hidden;
-  width: 520px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 25px; 
-}
-
-.learning-point-item-name {
-  float: left;
-  margin-right: 5%;
-  width: 30%;
-}
-  
-.learning-point-item-text {
-  float: left; 
-  width: 55%;
-  margin-bottom: 2em; 
-}
-
-
 
 
 /* Lifecycle Component */
@@ -283,7 +284,7 @@ span {
 .lanes {
   display: inline-block;
   padding-top: 0;
-  margin-top: -125px;
+  margin-top: -55px;
 }
 
 .lane {
@@ -348,7 +349,7 @@ span {
   position: relative;
   background-color: $colour-background-shade-2;
   color: white;
-  padding: 20px;
+  padding: 5px;
   border-radius: 10px;
   min-height: 100px;
   max-width: 730px;
@@ -434,4 +435,8 @@ span {
 
 .foot p {
    text-align: center;
+}
+.foot a {
+  text-decoration: none;
+  color: #A9A9A9;
 }

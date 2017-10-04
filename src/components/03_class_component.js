@@ -16,30 +16,28 @@ export default class ClassComponent extends Component {
 
 					<hr className="basic-rundown" /> 
 
-					<p>The fat arrow is an ES6 construct for functions. </p>
+					<p>Class components are considered the "React way" of writing components. With this method 
+					we create a class that extends React.Component. You can write this as either "extends React.Component" 
+					or "extends Component" with Component being imported in from react at the top of your code.</p>
 
 				
 					<hr className="key-points" />
 
 					<dl className="learning-list">
-						<dt className="learning-point-item-name">Render </dt>
+						<dt className="learning-point-item-name">extends Component </dt>
+					    <dd className="learning-point-item-text">Class components need to extend the React Component.</dd>
+						<dt className="learning-point-item-name">Render</dt>
 					    <dd className="learning-point-item-text">Class components must always have a render method.</dd>
 					</dl>
-					<ul>
-						<li></li>
-						<li>TODO: More content here.</li>
-					</ul>
 
 					<hr className="explanation" />
 
-					<p>Below we can see just the second component from our original 
-					example. Under the Babel tab, we can see that this is clearly a class 
-					component as that is the first word in our code.</p>
-					<p>Class components are defined by typing the word "class" followed by the 
-					name you want to give the component and then "extends React.Component" before
-					a set of curly braces.</p>
-					<p>This is creating your class component and then it is called at the bottom 
-					of the code just like in the example on the components page.</p>
+					<p>Below we can see just the second component from our original example. Under the Babel tab, 
+					we can identify that this is a class component as that is the first word in our code.</p>
+					<p>Class components are defined by typing the word "class" followed by the name you want to 
+					give the component and then "extends React.Component" before a set of curly braces.</p>
+					<p>This is creating your class component and it is called at the bottom of the code just 
+					like in the example on the components page.</p>
 
 
 					<hr className="codepen" />

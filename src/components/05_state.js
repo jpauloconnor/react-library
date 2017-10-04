@@ -1,5 +1,6 @@
 import React from 'react';
 import {Component} from 'react';
+import Codepen from 'react-codepen';
 
 
 export default class State extends Component {
@@ -12,24 +13,39 @@ export default class State extends Component {
 				<div className="mainDiv">
 					<h1 className="section-title">State</h1> 
 
+					<hr className="basic-rundown" />
 				
+					<p>State is data that changes over time.</p>
+					<p>It can exist locally within a Class Component but not all components have state.</p>
+
 					<hr className="key-points" />
 
-					<p>lorem ipsum.</p>
-					<ul>
-						<li>lorem ipsum</li>
-						<li>lorem ipsum</li>
-					</ul>
+					<dl className="learning-list">
+						<dt className="learning-point-item-name">Initial State</dt>
+					    <dd className="learning-point-item-text">State has an initial value, usually an object with various keys.</dd>
+					    <dt className="learning-point-item-name">Changing State</dt>
+					    <dd className="learning-point-item-text">Events happen that change the state.</dd>
+					    <dt className="learning-point-item-name">Unlike props</dt>
+					    <dd className="learning-point-item-text">State is not read-only and can be changed from within components.</dd>
+					    
+					</dl>
+
 
 					<hr className="explanation" />
 
-					<p>lorem ipsum.</p>
+					<p>Looking at the below code we can see an example of both state and setState. For now let's just worry about state 
+					and we can look into setState next.</p>
+					<p>We can see on line five that we have set the initial state to have a key of name with a value of an empty string.</p>
+					<p>This will allow us to use setState later to change the value of name based on the users input.</p>
+					<p>Key takeways of setting the initial state are that it needs to be declared inside of the constructor and the constructor 
+					should take an argument of props.</p> 
 
 
 					<hr className="codepen" />
-					{/* <Codepen height="350" user="KayleaBritton" hash="" />*/}
 
-					<p>Moving on, we'll discuss setState.</p>
+					<Codepen height="350" user="KayleaBritton" hash="RLZpaR" />
+
+					<p>Let's see state change with setState now.</p>
 					<button id="butn" className="button" onClick={next}>Next</button>
 				</div>
 			</div>
