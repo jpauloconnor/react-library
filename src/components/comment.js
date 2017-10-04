@@ -1,5 +1,4 @@
-// App
-// Smart. Does data stuff.
+/*  This is all wrong, fix it  */
 
 import React from 'react';
 import {Component} from 'react';
@@ -19,12 +18,15 @@ var h =  {
 
 
 export default class Comment extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+        comments: {}
+      };
 
-  getInitialState() {
-    return { 
-      comments: {}
-    }
   }
+
+ 
   
   addComment(commentData) {
     
@@ -70,7 +72,7 @@ export default class Comment extends Component {
   processComment(event) {
     event.preventDefault();
     
-    // 1. Take data from from form
+    // 1. Take data from 
     var commentData = {
       commentName: this.refs.name.value,
       commentBody: this.refs.desc.value
