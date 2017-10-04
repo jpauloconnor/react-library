@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react';
 import axios from 'axios';
-const API_BASE = "http://rest.learncode.academy/api/jameshandshoe/friends";
+const API_BASE = "https://rest.learncode.academy/api/jameshandshoe/friends";
 
 //TODO
 //Make a function that allows this to accept props that sets the state of the props

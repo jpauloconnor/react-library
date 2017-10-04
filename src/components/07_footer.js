@@ -7,8 +7,8 @@ export default class Footer extends Component {
         return (
             <footer className="foot">
             	<div className="main">
-                	<p>For more information, see the <a href="https://reactjs.org/">React Documentation</a>  
-                	 provided by <a href="https://www.facebook.com/">Facebook</a>.</p>
+                	<p>For more information, see the <a href="https://reactjs.org/" target="_blank">React Documentation</a>  
+                	 provided by <a href="https://www.facebook.com/" target="_blank">Facebook</a>.</p>
                 </div>
             </footer>
         );
