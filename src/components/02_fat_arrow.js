@@ -13,13 +13,13 @@ const FatArrow = () => {
 
 				<hr className="basic-rundown" /> 
 
-				<p>The fat arrow is an ES6 construct for writing functions. </p>
+				<p>The fat arrow is an ES6 way to write functions. </p>
 			
 				<hr className="key-points" />
 
 				<dl className="learning-list">
-					<dt className="learning-point-item-name">ES6 </dt>
-				    <dd className="learning-point-item-text">The 6th iteration of EcmaScript, the official term for JavaScript.</dd>
+					<dt className="learning-point-item-name">ES6, or EcmaScript 2015 </dt>
+				    <dd className="learning-point-item-text">The 6th edition of EcmaScript, the official term for JavaScript.</dd>
 				</dl>
 				
 

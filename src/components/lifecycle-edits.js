@@ -3,11 +3,14 @@ import { Component } from 'react';
 var classNames = require( 'classnames' );
 
 export default class LifeCycle extends Component {
-
-
-click (event) {
-  {(event.target.ref === "getInitialState") ? this.refs.getInitialState.removeClassName('description') : this.refs.getInitialState.addClassName('description')}
+  constructor(props) {
+    super(props);
+    this.state = {
+      active: false,
+    };
   }
+
+
   render() {
     function next() {
       window.location.assign('/willmount');
@@ -23,9 +26,7 @@ click (event) {
           <p>Components have lifecycle methods that allow you to run code at particular times in the process.</p>
           <p>If you prefix your method with "will" your code will run before something happens but if you use 
           "did" the method will run after something happens.</p>
-
-
-          {/* All of the below code is HTML and is meant to work with CSS, you need to change it to work as JSX with */}
+/* All of the below code is HTML and is meant to work with CSS, you need to change it to work as JSX with */
 
           <ul className="descriptions">
             <li className="description" ref="getInitialState">
