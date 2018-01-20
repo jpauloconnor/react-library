@@ -1,6 +1,7 @@
 import React from 'react';
 import Codepen from 'react-codepen';
 
+
 //Functional Component with a fat arrow
 const FatArrow = () => {
 	function next() {

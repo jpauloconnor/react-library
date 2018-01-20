@@ -7,14 +7,13 @@ html, body {
 }
 
 body, section::before {
-  background-image: url('./img/matrix.jpg');
+  /* background-image: url('./img/matrix.jpg'); */
   background-size: cover;
   background-position: center;
   background-attachment: fixed; 
 }
 
 body {
-  background-color: $colour-background;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
 }

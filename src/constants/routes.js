@@ -67,7 +67,6 @@ export const routes = [
     sidebar: () => <div>Life Cycle</div>,
     main: () => <LifeCycle />
   },
-   
   { path: '/video',
     sidebar: () => <div>Video</div>,
     main: () => <Video />
