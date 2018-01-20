@@ -1,0 +1,92 @@
+  /* Key Points */
+  dt, dd {
+    padding-top: 18px;
+  }
+  
+  .learning-list {
+    overflow: hidden;
+    width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px; 
+    height: auto;
+  }
+  
+  .learning-point-item-name {
+    float: left;
+    margin-right: 5%;
+    width: 30%;
+  }
+    
+  .learning-point-item-text {
+    float: left; 
+    width: 55%;
+    margin-bottom: 2em; 
+  }
+  
+  
+  
+  
+  /* Home Component */
+  
+  a span {
+    color: #ff80bf;
+    letter-spacing: 1.5px;
+  }
+  
+  hr.basic-rundown {
+      overflow: visible; /* For IE */
+      padding: 0;
+      border: none;
+      border-top: medium double #333;
+      color: #333;
+      text-align: center;
+  }
+  hr.basic-rundown:after {
+      content: "Basic Rundown";
+      display: inline-block;
+      position: relative;
+      top: -0.7em;
+      font-size: 1.5em;
+      padding: 0 0.25em;
+      background: white;
+  }
+  
+  span {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .example {
+    background-image: url('./img/comp.png');
+    background-size: cover;
+    width: 80%;
+    height: 250px;
+    margin-left: 75px;
+    margin-bottom: 50px;
+  }
+  
+  .example p {
+    clear: both;
+  }
+  
+  
+  
+  
+   
+  
+  
+  
+    
+  /* Comment Component*/
+  
+  .commentInput {
+    color: #333;
+    margin: 8px;
+  }
+  
+  .friends {
+    color: #333;
+  }
+  
+  

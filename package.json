@@ -7,6 +7,8 @@
     "classnames": "^2.2.5",
     "lodash": "^4.17.4",
     "node-sass": "^4.5.3",
+    "node-sass-chokidar": "0.0.3",
+    "npm-run-all": "^4.1.2",
     "proxyquire": "^1.8.0",
     "react": "^15.5.4",
     "react-codepen": "^0.1.0",
@@ -22,8 +24,12 @@
     "react-scripts": "0.9.5"
   },
   "scripts": {
-    "start": "node scripts/customized-config start",
-    "build": "node scripts/customized-config build",
+    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build-js": "react-scripts build",
+    "build": "npm-run-all build-css build-js",
     "test": "node scripts/customized-config test --env=jsdom",
     "eject": "react-scripts eject"
   }

@@ -1,0 +1,28 @@
+/*Demo 3 - Reusable Button*/
+.reusable-btn {
+    width: 400px;
+    height: 400px;
+  } /* ? */
+  
+  p {
+    margin-top: 20px;
+    line-height: 1.6;
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  a {
+    color: $blue;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  code {
+    background-color: white;
+    font-family: Monaco, monospace;
+    font-size: 0.9em; /* affecting homepage hr's?*/
+    padding: 5px;
+  }
