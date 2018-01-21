@@ -5,15 +5,11 @@ import Codepen from 'react-codepen';
 
 export default class Constructor extends Component {
 	render(){
-		function next() { {/* function to go to next page, called on button click below*/}
-			window.location.assign('/lifecycle');
-		}
 		return(
 			<div className="main">
 				<div className="mainDiv">
 					<h1 className="section-title">Constructor</h1> 
 
-				
 					<hr className="basic-rundown" />
 				
 					<p>The class constructor is the only place where the initial state can be assigned. </p>
@@ -37,13 +33,9 @@ export default class Constructor extends Component {
 					can access this.props.</p>
 					<p>We've also included a few bindings in the constructor because we want "this" to be bound to both these functions.</p>
 
-
 					<hr className="codepen" />
 
 					<Codepen height="350" user="KayleaBritton" hash="RLZpaR" />
-
-					<p>Now, let's look at the Life Cycle.</p>
-					<button id="butn" className="button" onClick={next}>Next</button>
 				</div>
 			</div>
 			

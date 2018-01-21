@@ -3,9 +3,6 @@ import Codepen from 'react-codepen';
 //Functional Component Example
 
 const FunctionalComponent = function(){
-	function next() {
-			window.location.assign('/fatarrow');
-		}
 	return(
 		<div className="main">
 			<div className="mainDiv">
@@ -46,9 +43,6 @@ const FunctionalComponent = function(){
 
 				<hr className="codepen" />
 				<Codepen height="350" user="KayleaBritton" hash="oGGgqX" />
-
-				<p>Next, let's take a step back and talk about the fat arrow for a minute.</p>
-				<button id="butn3" className="button" onClick={next}>Next</button>
 
 			</div>
 		</div>

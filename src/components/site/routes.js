@@ -1,24 +1,33 @@
 import React from 'react';
-import Home from '../components/00_home';
-import Components from '../components/00.5_components';
-import FunctionalComponent from '../components/01_functional_component';
-import FatArrow from '../components/02_fat_arrow';
-import Header from '../components/02_header';
-import ClassComponent from '../components/03_class_component';
-import JSXRules from '../components/04_jsx';
-import Props from '../components/04_props_advanced';
-import State from '../components/05_state';
-import LifeCycle from '../components/lifecycle';
-import WillMount from '../components/lifecycle_will_mount'
-import Clock from '../components/lifecycle_will_mount_example'
-import SetState from '../components/06_setState';
-import Constructor from '../components/07_constructor';
-import ToDoApp from '../components/todo'
-import Timer from '../components/timer';
-import Video from '../components/video/video';
-import Comment from '../components/comment';
-import FriendForm from '../components/axios_post_request';
-import Footer from '../components/07_footer';
+
+//Site Components
+import Home from './home';
+
+//Basics
+import Components from '../basics/components';
+import FunctionalComponent from '../basics/functional_component';
+import FatArrow from '../basics/fat_arrow';
+import ClassComponent from '../basics/class_component';
+import JSXRules from '../basics/jsx';
+import Props from '../basics/props_advanced';
+
+//Class Components
+import SetState from '../class_components/setState';
+import Constructor from '../class_components/constructor';
+import State from '../class_components/state';
+
+//Lifecycle Methods
+import LifeCycle from '../lifecycle/lifecycle';
+import WillMount from '../lifecycle/lifecycle_will_mount'
+import Clock from '../lifecycle/lifecycle_will_mount_example'
+
+//Apps
+import ToDoApp from '../apps/todo'
+import Timer from '../apps/timer';
+import Video from '../apps/video/video';
+import Comment from '../apps/comment';
+import FriendForm from '../apps/axios_post_request';
+
 
 export const routes = [
   { path: '/' || '/home',

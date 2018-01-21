@@ -6,9 +6,6 @@ import Codepen from 'react-codepen';
 
 export default class ClassComponent extends Component {
 	render(){
-		function next() { {/* function to go to next page, called on button click below*/}
-			window.location.assign('/jsx');
-		}
 		return(
 			<div className="main">
 				<div className="mainDiv">
@@ -39,12 +36,8 @@ export default class ClassComponent extends Component {
 					<p>This is creating your class component and it is called at the bottom of the code just 
 					like in the example on the components page.</p>
 
-
 					<hr className="codepen" />
 					<Codepen height="350" user="KayleaBritton" hash="dVVPgM" />
-
-					<p>Moving on, we'll discuss JSX.</p>
-					<button id="butn5" className="button" onClick={next}>Next</button>
 				</div>
 			</div>
 			

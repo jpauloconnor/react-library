@@ -1,16 +1,9 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 import './App.css';
-import Header from './components/02_header';
-import Footer from './components/07_footer';
+import Header from './components/site/header';
+import Footer from './components/site/footer';
 import Routes from './Routes.js';
-import {
-  BrowserRouter as Router,
-  Route,
-  Link
-} from 'react-router-dom';
-
-import { routes } from './constants/routes';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 const App = () => (
   <div>

@@ -25,9 +25,6 @@ export default class Timer extends React.Component {
   }
 
   render() {
-    function next() { {/* function to go to next page, called on button click below*/}
-      window.location.assign('/willmountadv');
-    }
     return (
       <div className="main">
         <div className="mainDiv">
@@ -52,9 +49,7 @@ export default class Timer extends React.Component {
 
           <div>Seconds Elapsed: {this.state.secondsElapsed}</div>
 
-          <p>Now, we'll take a look at a React Clock.</p>
-          <button id="butn" className="button" onClick={next}>Next</button>
-        </div>
+          </div>
       </div>
       
     );

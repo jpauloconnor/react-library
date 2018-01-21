@@ -2,13 +2,8 @@ import React from 'react';
 import { Component } from 'react';
 import Codepen from 'react-codepen';
 
-//landing page
-
 export default class Components extends Component {
 	render(){
-	function next() { {/* function to go to next page, called on button click below */}
-			window.location.assign('/functionalcomponent');
-		}
 		return (
 			<div className="main">
 				<div className="mainDiv">
@@ -22,7 +17,6 @@ export default class Components extends Component {
 
 					<hr className="key-points" />
 
-
 					<dl className="learning-list">
 						<dt className="learning-point-item-name">Component </dt>
 					    <dd className="learning-point-item-text">an independent, reusable piece of the user interface.</dd>
@@ -32,9 +26,6 @@ export default class Components extends Component {
 					    <dd className="learning-point-item-text">a component that is itself a function.</dd>
 					    
 					</dl>
-
-					
-
 					<hr className="explanation" />
 
 					<p>Looking at the code snippet below, we can see two lines being rendered on the page.</p>
@@ -51,10 +42,6 @@ export default class Components extends Component {
 
 					<hr className="codepen" />
 					<Codepen height="350" user="KayleaBritton" hash="borJMa" />
-
-					<p>We're going to get a closer look at the two types of components. Let's go to functional 
-					components first.</p>
-					<button id="butn2" className="button" onClick={next}>Next</button>
 				</div>
 			</div>
 		);

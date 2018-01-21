@@ -60,11 +60,6 @@ export default class Comment extends Component {
   }
 };
 
-/*
-  Add comment Form
-  <AddCommentForm />
-*/
-// Semi-Dumb
 
  class AddCommentForm extends Component {
 
@@ -94,24 +89,6 @@ export default class Comment extends Component {
       <div className="main">
         <div className="mainDiv">
           <h1 className="section-title">Comment Tool</h1>
-
-          <hr className="key-points" />
-
-          <p>lorem ipsum.</p>
-          <ul>
-            <li>lorem ipsum</li>
-            <li>lorem ipsum</li>
-          </ul>
-
-          <hr className="explanation" />
-
-          <p>lorem ipsum.</p>
-
-
-          <hr className="codepen" /> {/*change to something else, like example or project*/}
-          {/* <Codepen height="350" user="KayleaBritton" hash="" /> -- is this needed? --*/}
-
-
           <div className="callout secondary">
             <h4 className="leave-comment">Add a Comment</h4>
             <form className="post-edit" ref="commentForm" onSubmit={this.processComment}>
@@ -120,9 +97,6 @@ export default class Comment extends Component {
               <button id="submit" type="submit" className="button button-outline comment-button action-button expand-right">Add Comment</button>
             </form>
           </div>
-
-          <p>Now, let's look at the Life Cycle.</p>
-          <button id="butn" className="button"  onClick={next}>Next</button>
         </div>
       </div>
 
@@ -131,11 +105,6 @@ export default class Comment extends Component {
 };
 
 
-/*
-  Newcomment
-  <NewComment />
-
-*/
  class NewComment extends Component {
   render() {
     return ( 

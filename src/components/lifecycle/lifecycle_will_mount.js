@@ -18,9 +18,7 @@ export default class WillMount extends Component {
 	}
 
 	render(){
-    function next() { {/* function to go to next page, called on button click below*/}
-      window.location.assign('/video');
-    }
+  
 		return(
 			<div className="main">
 				<div className="mainDiv">
@@ -45,8 +43,7 @@ export default class WillMount extends Component {
 
 					<button onClick={this.update} className="button">{this.state.val}</button>
 
-					<p>Now, we'll look at some other examples of React.</p>
-					<button id="butn" className="button" onClick={next}>Next</button>
+				
 				</div>
 
 			</div>

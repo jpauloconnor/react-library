@@ -2,24 +2,15 @@ import React from 'react';
 import { Component } from 'react';
 import Codepen from 'react-codepen';
 
-
 export default class Props extends Component {
   render(){
-    function next() { {/* function to go to next page, called on button click below*/}
-      window.location.assign('/state');
-    }
     return(
       <div className="main">
         <div className="mainDiv">
           <h1 className="section-title">Props</h1> 
 
-          <hr className="basic-rundown" />
-
-
           <p>Props stands for an object of data that holds key-value pairs that we want to access
           in the component through JSX expressions.</p>
-        
-          <hr className="key-points" />
 
           <dl className="learning-list">
             <dt className="learning-point-item-name">JSX expression</dt>
@@ -27,7 +18,6 @@ export default class Props extends Component {
             <dt className="learning-point-item-name">Read-Only</dt>
               <dd className="learning-point-item-text">Props should never be modified by the component where they are created.</dd>
           </dl>
-
 
           <hr className="explanation" />
 
@@ -39,12 +29,8 @@ export default class Props extends Component {
           App Component where functional component One is called.</p>
           <p> So props is an object with a key of "name" and a value of "Kaylea" that renders the value where props.name is.</p>
 
-
           <hr className="codepen" />
           <Codepen height="350" user="KayleaBritton" hash="borJMa" />
-
-          <p>Let's move on to State.</p>
-          <button id="butn" className="button" onClick={next}>Next</button>
         </div>
       </div>
     );

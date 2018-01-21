@@ -1,15 +1,12 @@
- 
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 import './App.css';
 
 import {
-  BrowserRouter as Router,
   Route,
   Link
 } from 'react-router-dom'
 
-import { routes } from './constants/routes';
+import { routes } from './components/site/routes';
 
 
 const Routes = () => (

@@ -1,17 +1,11 @@
 import React from 'react';
 import { Component } from 'react';
-var classNames = require( 'classnames' );
 
 export default class LifeCycle extends Component {
-
-
 click (event) {
   {(event.target.ref === "getInitialState") ? this.refs.getInitialState.removeClassName('description') : this.refs.getInitialState.addClassName('description')}
   }
   render() {
-    function next() {
-      window.location.assign('/willmount');
-    }
     return (
       <div className="main">       
         <div className="mainDiv">
@@ -90,11 +84,7 @@ click (event) {
             <li className="description__close"><a href="#">×</a></li>
           </ul>
 
-
           <hr className="key-points" />
-
-          
-
           <div className="lanes">
             <ul className="lane"><h2 className="lane__title">Mounting:</h2>
               
@@ -116,15 +106,6 @@ click (event) {
               <li className="lane__item"><a className="step" href="#componentWillUnmount" onClick={this.click}>componentWillUnmount</a></li>  
             </ul>
           </div>
-
-
-
-          
-          
-          <p>Now, we'll take a closer look at willMount.</p>
-          <button id="butn" className="button" onClick={next}>Next</button>
-
-
         </div>
       </div> 
     );
