@@ -28,6 +28,7 @@ const Routes = () => (
             <li><Link to="/classcomponent">Class Component</Link></li>
             <li><Link to="/jsx">JSX</Link></li>
             <li><Link to="/props">Props</Link></li>
+            <li><Link to="/propssimpledemo">PropsSimpleDemo</Link></li>
             <li><Link to="/state">State</Link></li>
             <li><Link to="/setstate">setState</Link></li>
             <li><Link to="/constructor">Constructor</Link></li>
@@ -39,6 +40,8 @@ const Routes = () => (
             <li><Link to="/willmountadv">Clock</Link></li>
             <li><Link to="/comment">Comment</Link></li>
             <li><Link to="/friendform">Friend Form</Link></li>
+            <li><Link to="/names">Names</Link></li>
+
           </ul>
         </div>
 

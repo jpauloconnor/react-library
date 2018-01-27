@@ -7,6 +7,7 @@ import Header from '../components/02_header';
 import ClassComponent from '../components/03_class_component';
 import JSXRules from '../components/04_jsx';
 import Props from '../components/04_props_advanced';
+import PropsApp from '../components/props/PropsApp';
 import State from '../components/05_state';
 import LifeCycle from '../components/lifecycle';
 import WillMount from '../components/lifecycle_will_mount'
@@ -19,81 +20,111 @@ import Video from '../components/video/video';
 import Comment from '../components/comment';
 import FriendForm from '../components/axios_post_request';
 import Footer from '../components/07_footer';
+import Child from '../components/props_work/Child'
+import Parent from '../components/props_work/Parent'
+
 
 export const routes = [
-  { path: '/' || '/home',
+  {
+    path: '/' || '/home',
     exact: true,
     sidebar: () => <div>Home</div>,
     main: () => <Home />
   },
-  { path: '/components',
+  {
+    path: '/components',
     sidebar: () => <div>Components</div>,
     main: () => <Components />
-
   },
-  { path: '/functionalcomponent',
+  {
+    path: '/functionalcomponent',
     sidebar: () => <div>Functional Component</div>,
     main: () => <FunctionalComponent />
   },
-  { path: '/fatarrow',
+  {
+    path: '/fatarrow',
     sidebar: () => <div>Fat Arrow</div>,
     main: () => <FatArrow />
   },
-  { path: '/classcomponent',
+  {
+    path: '/classcomponent',
     sidebar: () => <div>Class Component</div>,
     main: () => <ClassComponent />
   },
-  { path: '/jsx',
+  {
+    path: '/jsx',
     sidebar: () => <div>JSX</div>,
     main: () => <JSXRules />
   },
-  { path: '/props',
+  {
+    path: '/props',
     sidebar: () => <div>Props</div>,
     main: () => <Props />
   },
-    { path: '/state',
+  {
+    path: '/propssimpledemo',
+    sidebar: () => <div>Props Simple Demo</div>,
+    main: () => <PropsApp />
+  },
+  {
+    path: '/state',
     sidebar: () => <div>State</div>,
     main: () => <State />
   },
-    { path: '/setState',
+  {
+    path: '/setState',
     sidebar: () => <div>setState</div>,
     main: () => <SetState />
   },
-    { path: '/constructor',
+  {
+    path: '/constructor',
     sidebar: () => <div>Constructor</div>,
     main: () => <Constructor />
   },
-   { path: '/lifecycle',
+  {
+    path: '/lifecycle',
     sidebar: () => <div>Life Cycle</div>,
     main: () => <LifeCycle />
   },
-  { path: '/video',
+  {
+    path: '/video',
     sidebar: () => <div>Video</div>,
     main: () => <Video />
   },
-   { path: '/willmount',
+  {
+    path: '/willmount',
     sidebar: () => <div>willMount</div>,
     main: () => <WillMount />
   },
-  { path: '/willmountadv',
+  {
+    path: '/willmountadv',
     sidebar: () => <div>Will Mount Example</div>,
     main: () => <Clock />
   },
-  { path: '/todo',
+  {
+    path: '/todo',
     sidebar: () => <div>To Do</div>,
     main: () => <ToDoApp />
   },
-  { path: '/timer',
+  {
+    path: '/timer',
     sidebar: () => <div>Timer</div>,
     main: () => <Timer />
   },
-  { path: '/comment',
+  {
+    path: '/comment',
     sidebar: () => <div>Comment</div>,
     main: () => <Comment />
-  }, 
-   { path: '/friendform',
+  },
+  {
+    path: '/friendform',
     sidebar: () => <div>HTTP Requests</div>,
     main: () => <FriendForm />
-  }, 
+  },
+  {
+    path: '/names',
+    sidebar: () => <div>Names and Props </div>,
+    main: () => <Parent />
+  },
 ]
 

@@ -1,0 +1,372 @@
+@charset "UTF-8";
+/* ------------------------------
+Variables
+--------------------------------*/
+/* ------------------------------
+Global Section
+--------------------------------*/
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Belleza;
+  color: #f2f2f2; }
+
+body, section::before {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+
+body {
+  background-color: #D9514E;
+  font-family: 'Belleza', sans-serif;
+  text-align: center; }
+
+section::before {
+  content: "";
+  display: block;
+  z-index: -1;
+  -webkit-filter: blur(1.5px);
+  /* Safari */
+  filter: blur(1.5px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+/* ------------------------------
+Header Section
+--------------------------------*/
+.navbar {
+  background-color: #D9514E;
+  margin-top: 10px;
+  border-radius: 5px; }
+
+.navbar h1 {
+  padding-left: 10px;
+  margin: 25px 0px 0px 15px;
+  float: left; }
+
+.navbar .logo {
+  float: left;
+  margin: 10px 10px 10px 25px;
+  height: 80px;
+  width: 60px; }
+
+/* ------------------------------
+Footer Section
+--------------------------------*/
+.foot p {
+  text-align: center; }
+
+.foot a {
+  text-decoration: none;
+  color: #A9A9A9; }
+
+/* ------------------------------
+Global Section
+--------------------------------*/
+.main {
+  background-color: white;
+  height: 100%;
+  min-height: 100%; }
+
+.mainDiv {
+  margin: auto;
+  width: 90%;
+  padding: 5px;
+  color: #000; }
+
+.error {
+  color: red; }
+
+a {
+  color: #1a000d; }
+
+li {
+  list-style-type: none; }
+
+.button {
+  color: #333333; }
+
+hr.explanation {
+  overflow: visible;
+  /* For IE */
+  padding: 0;
+  border: none;
+  border-top: medium double #333;
+  color: #333;
+  text-align: center; }
+
+hr.explanation:after {
+  content: "Explanation";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: white; }
+
+hr.key-points {
+  overflow: visible;
+  /* For IE */
+  padding: 0;
+  border: none;
+  border-top: medium double #333;
+  color: #333;
+  text-align: center; }
+
+hr.key-points:after {
+  content: "Key Points";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: white; }
+
+hr.codepen {
+  overflow: visible;
+  /* For IE */
+  padding: 0;
+  border: none;
+  border-top: medium double #333;
+  color: #333;
+  text-align: center; }
+
+hr.codepen:after {
+  content: "Code Snippet";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: white; }
+
+iframe {
+  height: 350px; }
+
+.section-title {
+  font-family: "Belleza", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  text-decoration-style: bold;
+  border-bottom: 0px solid #ccc;
+  margin-bottom: 1em; }
+
+/* ------------------------------
+Routes
+--------------------------------*/
+.learning-list {
+  overflow: hidden;
+  width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  height: auto; }
+
+.learning-point-item-name {
+  float: left;
+  margin-right: 5%;
+  width: 30%; }
+
+.learning-point-item-text {
+  float: left;
+  width: 55%;
+  margin-bottom: 2em; }
+
+/* Home Component */
+a span {
+  color: #ff80bf;
+  letter-spacing: 1.5px; }
+
+hr.basic-rundown {
+  overflow: visible;
+  /* For IE */
+  padding: 0;
+  border: none;
+  border-top: medium double #333;
+  color: #333;
+  text-align: center; }
+
+hr.basic-rundown:after {
+  content: "Basic Rundown";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: white; }
+
+span {
+  font-weight: bold;
+  text-decoration: underline; }
+
+.example {
+  background-size: cover;
+  width: 80%;
+  height: 250px;
+  margin-left: 75px;
+  margin-bottom: 50px; }
+
+.example p {
+  clear: both; }
+
+/* Comment Component*/
+/* ------------------------------
+JSX Component
+--------------------------------*/
+dt, dd {
+  padding-top: 18px; }
+
+/* ------------------------------
+Video App
+--------------------------------*/
+.search-bar {
+  margin: 20px;
+  text-align: left; }
+
+.vidSearchLbl {
+  padding-right: 10px;
+  font-family: sans-serif;
+  color: orange;
+  font-size: 20px; }
+
+.search-bar input {
+  width: 25%; }
+
+.video-item img {
+  width: 500px;
+  height: 500px; }
+
+.video-detail .details {
+  margin-top: 10px;
+  padding: 10px;
+  border: 2px solid orange;
+  border-radius: 4px; }
+
+/* ------------------------------
+Lifecycle Component 
+--------------------------------*/
+.logo {
+  display: block;
+  margin: 30px auto 0 auto;
+  width: 100px;
+  height: 100px; }
+
+.heading {
+  margin-bottom: 0.5em; }
+
+.heading--2 {
+  font-size: 30px; }
+
+.lanes {
+  display: inline-block;
+  padding-top: 0;
+  margin-top: -55px; }
+
+.lane {
+  padding: 50px 0;
+  text-align: left; }
+
+.lane a {
+  color: #f2f2f2; }
+
+.lane + .lane {
+  border-top: 1px solid white; }
+
+.lane__title {
+  display: inline-block;
+  color: white;
+  margin-right: 10px;
+  font-size: 16px;
+  width: 80px;
+  text-align: right; }
+
+.lane li {
+  padding-right: 15px; }
+
+.lane__item {
+  display: inline-block;
+  margin-right: -4px; }
+  .lane__item + .lane__item:before {
+    content: '➞';
+    color: white;
+    font-size: 1em;
+    vertical-align: middle;
+    margin: 0 0.5em; }
+
+.step {
+  display: inline-block;
+  color: #D9514E;
+  text-decoration: none;
+  font-size: 15px;
+  border: 3px solid #F6D57A;
+  border-radius: 10px;
+  padding: 15px;
+  transition: all 0.1s ease-out; }
+  .step:hover {
+    background-color: #8acfba;
+    color: black;
+    text-decoration: none; }
+
+.descriptions {
+  position: relative;
+  background-color: #86bad3;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  min-height: 100px;
+  max-width: 730px;
+  margin: 40px auto; }
+
+.description {
+  display: none; }
+  .description:target, .description--placeholder {
+    display: block; }
+  .description:target ~ .description--placeholder {
+    display: none; }
+  .description:target ~ .description__close {
+    display: block; }
+  .description:not(.description--placeholder) {
+    text-align: left; }
+
+.description__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 25px;
+  transition: opacity 0.2s ease-out;
+  display: none; }
+
+/* ------------------------------
+Reusable button
+--------------------------------*/
+.reusable-btn {
+  width: 400px;
+  height: 400px; }
+
+/* ? */
+p {
+  margin-top: 20px;
+  line-height: 1.6;
+  font-size: 14px;
+  text-align: left; }
+
+a {
+  color: #86bad3;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+code {
+  background-color: white;
+  font-family: Monaco, monospace;
+  font-size: 0.9em;
+  /* affecting homepage hr's?*/
+  padding: 5px; }
